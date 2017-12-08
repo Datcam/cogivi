@@ -1,0 +1,10 @@
+<main>
+  <section class="container login">
+    <div class="container-heading">Log In</div>
+    <form class="login-form" #f="ngForm">
+      <input class="email" type="text" name="user.name" [(ngModel)]="user.email" placeholder="Email" required/>
+      <input class="pass" type="password" name="user.password" [(ngModel)]="user.password" placeholder="Password" required/>
+      <a class="button" (click)="login()">Log In</a>
+    </form>
+  </section>
+</main>

@@ -1,0 +1,53 @@
+<main>
+  <section class="container dashboard">
+    <div class="container-heading">[Recipient]'s Cogivi Dashboard</div>
+    <h2 class="heading">Contributors</h2>
+    <div class="columns contributors">
+      <div class="contributor me">
+        <img class="profile" src="/assets/dashboard/person_icon.png"/>
+        <div class="name">Me</div>
+        <div class="completed">1/5 Completed</div>
+        <a routerLink="/contributeTo" class="button">Contribute</a>
+      </div>
+      <div class="contributor">
+        <a class="delete-item"></a>
+        <img class="profile" src="/assets/dashboard/person_icon.png"/>
+        <div class="name">Jesica Teddy</div>
+        <div class="completed">1/5 Completed</div>
+        <a routerLink="/contributeTo" class="button">View</a>
+      </div>
+      <div class="contributor">
+        <a class="delete-item"></a>
+        <img class="profile" src="/assets/dashboard/person_icon.png"/>
+        <div class="name">Chriss Jackson</div>
+        <div class="completed">1/5 Completed</div>
+        <a routerLink="/contributeTo" class="button">View</a>
+      </div>
+      <div class="contributor">
+        <a class="delete-item"></a>
+        <img class="profile" src="/assets/dashboard/person_icon.png"/>
+        <div class="name">Melinda Watson</div>
+        <div class="completed">1/5 Completed</div>
+        <a routerLink="/contributeTo" class="button">View</a>
+      </div>
+    </div>
+    <div class="buttons">
+      <div class="all-contributors-container">
+        <a routerLink="/allContributions" class="button all-contributors">View All Contributions</a>
+      </div>
+      <div class="all-contributors-container">
+        <a class="button all-contributors" id="invite-more">Invite More Contributors</a>
+      </div>
+      <a routerLink="/checkout" class="button order-cogivi">Order Cogivi</a>
+    </div>
+    <form class="invite main" id="main-invite">
+      <div class="heading">Invite Contributors</div>
+      <p class="description">Each Cogivi is made by 4 to 8 contributors - invite people to help below:
+        <br/><br/> <b>Please invite at least 4 contributors including yourself</b></p>
+      <input placeholder="First name" /> <input placeholder="Last name" />
+      <input placeholder="Email address" class="full" />
+      <button class="button">Invite</button>
+    </form>
+    <a class="cancel-cogivi" id="cancel-cogivi">Cancel Cogivi</a>
+  </section>
+</main>

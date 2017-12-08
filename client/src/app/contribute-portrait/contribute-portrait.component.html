@@ -1,0 +1,49 @@
+<main>
+  <section class="container contribute-photo">
+    <div class="container-heading">Contribute Portrait</div>
+    <div class="columns items">
+      <div class="item">
+        <div class="heading">Gift</div>
+        <img src="/assets/products/IMG_2306.JPG" class="top-photo" />
+      </div>
+      <div class="item">
+        <div class="heading">Instructions</div>
+        <p>Upload a photo that includes your head against a light background</p>
+        <div class="heading">Suggestions</div>
+        <p>If you don't have a photo handy, shoot a selfie or have a friend help you against a white wall</p>
+      </div>
+      <div class="item">
+        <div class="heading">Process</div>
+        <div class="examples">
+          <div style="background-image: url(/assets/products/TUT1.JPG);"></div>
+          <div style="background-image: url(/assets/products/TUT2.JPG);"></div>
+          <div style="background-image: url(/assets/products/TUT3.JPG);"></div>
+        </div>
+      </div>
+    </div>
+    <div class="columns submit-photo">
+      <div class="item">
+        <a class="arrow" routerLink="/contributeGratitude">
+          <img src="/assets/contributephoto/CP_0022_Group-1.png" />
+          <div>Previous Item</div>
+        </a>
+      </div>
+      <div class="item">
+        <input type="file" id="photo" class="hidden"/>
+        <label for="photo" class="image-uploader">
+          <img src="/assets/contributephoto/CP_0010_Image-Box.png" />
+          <span>Upload</span>
+        </label>
+      </div>
+      <div class="item">
+        <a class="arrow" routerLink="/contributePhoto">
+          <img src="/assets/contributephoto/CP_0024_Group-1.png" />
+          <div>Next Item</div>
+        </a>
+      </div>
+    </div>
+    <button class="button submit">Submit</button>
+    <div class="image"><a class="close"><img src="/assets/contributephoto/CP_0004_Delete.png" /></a></div>
+    <a routerLink="/cogiviDashboard" class="button back">Back to Dashboard</a>
+  </section>
+</main>

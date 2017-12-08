@@ -1,0 +1,52 @@
+<main>
+  <section class="container contribute-photo">
+    <div class="container-heading">Contribute Photo</div>
+    <div class="columns items">
+      <div class="item">
+        <div class="heading">Gift</div>
+        <img src="/assets/products/IMG_2332.JPG" class="top-photo" />
+        <p>Pressed onto tile, these pictures capture a representitive moment of your relationship</p>
+      </div>
+      <div class="item">
+        <div class="heading">Instructions</div>
+        <p>Upload a photo that will be a memorable reminder of your relationship</p>
+        <div class="heading">Suggestions</div>
+        <p>Choose a photo with both of you together (just the two of you if possible)</p>
+      </div>
+      <div class="item">
+        <div class="heading">Examples</div>
+        <div class="examples">
+          <div style="background-image: url(/assets/products/tile1.png);"></div>
+          <div style="background-image: url(/assets/products/tile2.png);"></div>
+          <div style="background-image: url(/assets/products/tile3.png);"></div>
+          <div style="background-image: url(/assets/products/tile4.png);"></div>
+        </div>
+      </div>
+    </div>
+    <div class="columns submit-photo">
+      <div class="item">
+        <a class="arrow" routerLink="/contributePortrait">
+          <img src="/assets/contributephoto/CP_0022_Group-1.png" />
+          <div>Previous Item</div>
+        </a>
+      </div>
+      <div class="item">
+        <input type="file" id="photo" class="hidden"/>
+        <label for="photo" class="image-uploader">
+          <img src="/assets/contributephoto/CP_0010_Image-Box.png" />
+          <span>Upload</span>
+        </label>
+      </div>
+      <div class="item">
+        <div class="arrow  hidden">
+          <a class="arrow" routerLink="/contributePortrait"></a>
+          <img src="/assets/contributephoto/CP_0024_Group-1.png" />
+          <div>Next Item</div>
+        </div>
+      </div>
+    </div>
+    <button class="button submit">Submit</button>
+    <div class="image"><a class="close"><img src="/assets/contributephoto/CP_0004_Delete.png" /></a></div>
+    <a routerLink="/cogiviDashboard" class="button back">Back to Dashboard</a>>
+  </section>
+</main>

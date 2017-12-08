@@ -1,0 +1,26 @@
+<header>
+  <a routerLink="/home"><img alt="" src="/assets/landing/LP_0000_Cogivi-Logo.png" /></a>
+  <a href="javascript:void(0);" id="dropdown-button"><img alt="" src="/assets/landing/LP_0001_Person-icon.png" /></a>
+  <div id="dropdown">
+    <!--<div class="container" *ngFor="let link of navigationLinks;">-->
+      <!--<a (click)="link.method()" routerLink="{{link.url}}">{{link.name}}</a>-->
+    <!--</div>-->
+
+    <div class="container">
+    <a *ngIf="!loginService.isLogin" routerLink="/login">Login</a>
+    <a *ngIf="!loginService.isLogin" routerLink="/register">Register</a>
+    <a *ngIf="!loginService.isLogin" routerLink="/contact">Contact us</a>
+    <a *ngIf="!loginService.isLogin" routerLink="/faq">FAQ</a>
+    <a *ngIf="loginService.isLogin" routerLink="/home">Home</a>
+    <a *ngIf="loginService.isLogin" routerLink="/myProject">My Project</a>
+    <a *ngIf="loginService.isLogin" routerLink="/startCogivi">+  Start Cogivi</a>
+    <a *ngIf="loginService.isLogin" routerLink="/howItWorks">Start It Works</a>
+    <a *ngIf="loginService.isLogin" routerLink="/whatsInACogivi">What's in a Cogivi</a>
+    <a *ngIf="loginService.isLogin" routerLink="/myCogivis">My Cogivis</a>
+    <a *ngIf="loginService.isLogin" routerLink="/account">Account</a>
+      <span class="divider" *ngIf="loginService.isLogin"></span>
+    <a *ngIf="loginService.isLogin" (click)="logOut()">Logout</a>
+    </div>
+  </div>
+  <div class="triangle" id="triangle"></div>
+</header>
